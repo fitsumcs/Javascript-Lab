@@ -4,7 +4,7 @@ var firstName;
 var lastName;
 var age;
 var job;
-//Age var for Holding Integer Value  
+//Age var for Holding Number Value  
 let tempAge;
 //Eligible to vote 
 let isEligibleToVote;
@@ -20,7 +20,7 @@ age = prompt("Enter Your Age");
 tempAge = parseInt(age);
 
 
-// check Eligible 
+//  check Eligibility 
 if (tempAge >= 18) {
     isEligibleToVote = true;
 } else {
