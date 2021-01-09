@@ -39,6 +39,11 @@ let calcBmi = function(weight, height) {
 
 }
 
+//age calculator 
+function ageCalc(birthYear) {
+    return new Date().getFullYear() - birthYear;
+
+}
 
 
 // Receive the values from input 
@@ -46,9 +51,9 @@ firstName = prompt("Enter Your First Name");
 lastName = prompt("Enter Your Last Name");
 job = prompt("What is Your Profession ?");
 birthYear = prompt("Enter Your Birth Date");
-numberOfFamily = prompt("Number of Family  ? ");
 weight = prompt("Your Weight in Kg  ? ");
 height = prompt("Your Height in M  ? ");
+numberOfFamily = prompt("Number of Family  ? ");
 
 //Receiving the family number 
 for (let i = 0; i < parseInt(numberOfFamily); i++) {
@@ -68,27 +73,24 @@ if (tempAge >= 18) {
 }
 
 
+// Adding Self Invoking Function Expression 
 
+(function() {
 
-console.log("Here is your Profile ")
-console.log("Full Name: " + firstName + " " + lastName);
-console.log("Profession : " + job);
-console.log("Age : " + tempAge + " " + "years old");
-console.log("Is Eligible to Vote : " + isEligibleToVote);
+    console.log("Here is your Profile ")
+    console.log("Full Name: " + firstName + " " + lastName);
+    console.log("Profession : " + job);
+    console.log("Age : " + tempAge + " " + "years old");
+    console.log("Is Eligible to Vote : " + isEligibleToVote);
 
-console.log("family Members ");
+    console.log("Family Members ");
 
-//Displaying the family member with foreach
-familyMember.forEach(function(member, index) {
-    console.log("Family Member  " + (index + 1) + " : " + member);
-});
+    //Displaying the family member with foreach
+    familyMember.forEach(function(member, index) {
+        console.log("Family Member  " + (index + 1) + " : " + member);
+    });
 
-// call bmi calculator 
-calcBmi(weight, height);
+    // call bmi calculator 
+    calcBmi(weight, height);
 
-
-//age calculator 
-function ageCalc(birthYear) {
-    return new Date().getFullYear() - birthYear;
-
-}
+})();
