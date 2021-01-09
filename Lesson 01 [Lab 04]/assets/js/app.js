@@ -12,7 +12,7 @@ let isEligibleToVote;
 //family storage array 
 let familyMember = new Array();
 //number of family 
-let memberNo;
+let numberOfFamily;
 
 
 
@@ -21,6 +21,7 @@ firstName = prompt("Enter Your First Name");
 lastName = prompt("Enter Your Last Name");
 job = prompt("What is Your Profession ?")
 age = prompt("Enter Your Age");
+numberOfFamily = prompt("Number of Family  ? ");
 
 
 tempAge = parseInt(age);
