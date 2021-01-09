@@ -48,3 +48,10 @@ console.log("Full Name: " + firstName + " " + lastName);
 console.log("Profession : " + job);
 console.log("Age : " + age + " " + "years old");
 console.log("Is Eligible to Vote : " + isEligibleToVote);
+
+console.log("family Members ");
+
+//Displaying the family member with foreach
+familyMember.forEach(function(member) {
+    console.log("Family Member : " + member);
+});
