@@ -19,9 +19,15 @@ let numberOfFamily;
 // Receive the values from input 
 firstName = prompt("Enter Your First Name");
 lastName = prompt("Enter Your Last Name");
-job = prompt("What is Your Profession ?")
+job = prompt("What is Your Profession ?");
 age = prompt("Enter Your Age");
 numberOfFamily = prompt("Number of Family  ? ");
+
+//Receiving the family number 
+for (let i = 0; i < parseInt(numberOfFamily); i++) {
+    familyMember[i] = prompt("Your Family  Members " + (i + 1));
+}
+
 
 
 tempAge = parseInt(age);
