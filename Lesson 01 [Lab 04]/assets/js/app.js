@@ -9,6 +9,12 @@ let tempAge;
 //Eligible to vote 
 let isEligibleToVote;
 
+//family storage array 
+let familyMember = new Array();
+//number of family 
+let memberNo;
+
+
 
 // Receive the values from input 
 firstName = prompt("Enter Your First Name");
