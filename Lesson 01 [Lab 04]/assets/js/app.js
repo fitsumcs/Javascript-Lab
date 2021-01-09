@@ -14,6 +14,31 @@ let familyMember = new Array();
 //number of family 
 let numberOfFamily;
 
+//height and weight 
+let weight;
+let height;
+
+//bmi calculator 
+let calcBmi = function(weight, height) {
+
+    let bmi = weight / (height * height);
+
+
+    bmi = Number(bmi.toFixed(1));
+
+    console.log("Your Bmi is : " + bmi);
+    if (bmi < 18.5)
+        console.log("Your are : Underweight");
+    else if (bmi >= 18.5 && bmi <= 24.9)
+        console.log("Your are : Normal");
+    else if (bmi >= 25.0 && bmi <= 29.9)
+        console.log("Your are : Overweight");
+    else if (bmi >= 30.0)
+        console.log("Your are : Obese");
+
+
+}
+
 
 
 // Receive the values from input 
@@ -22,6 +47,8 @@ lastName = prompt("Enter Your Last Name");
 job = prompt("What is Your Profession ?");
 birthYear = prompt("Enter Your Birth Date");
 numberOfFamily = prompt("Number of Family  ? ");
+weight = prompt("Your Weight in Kg  ? ");
+height = prompt("Your Height in M  ? ");
 
 //Receiving the family number 
 for (let i = 0; i < parseInt(numberOfFamily); i++) {
@@ -55,6 +82,9 @@ console.log("family Members ");
 familyMember.forEach(function(member, index) {
     console.log("Family Member  " + (index + 1) + " : " + member);
 });
+
+// call bmi calculator 
+calcBmi(weight, height);
 
 
 //age calculator 
