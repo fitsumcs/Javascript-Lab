@@ -11,3 +11,9 @@ firstName = prompt("Enter Your First Name");
 lastName = prompt("Enter Your Last Name");
 job = prompt("What is Your Profession ?")
 age = prompt("Enter Your Age");
+
+
+console.log("Here is your Profile ")
+console.log("Full Name: " + firstName + " " + lastName);
+console.log("Profession : " + job);
+console.log("Age : " + age + " " + "years old");
