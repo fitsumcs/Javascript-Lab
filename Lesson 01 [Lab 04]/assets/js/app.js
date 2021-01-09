@@ -2,7 +2,7 @@
 // You can check this Variables are Available or not under the window object 
 var firstName;
 var lastName;
-var age;
+var birthYear;
 var job;
 //Age var for Holding Number Value  
 let tempAge;
@@ -20,7 +20,7 @@ let numberOfFamily;
 firstName = prompt("Enter Your First Name");
 lastName = prompt("Enter Your Last Name");
 job = prompt("What is Your Profession ?");
-age = prompt("Enter Your Age");
+birthYear = prompt("Enter Your Birth Date");
 numberOfFamily = prompt("Number of Family  ? ");
 
 //Receiving the family number 
@@ -30,7 +30,7 @@ for (let i = 0; i < parseInt(numberOfFamily); i++) {
 
 
 
-tempAge = parseInt(age);
+tempAge = ageCalc(birthYear);
 
 
 //  check Eligibility 
@@ -46,12 +46,19 @@ if (tempAge >= 18) {
 console.log("Here is your Profile ")
 console.log("Full Name: " + firstName + " " + lastName);
 console.log("Profession : " + job);
-console.log("Age : " + age + " " + "years old");
+console.log("Age : " + tempAge + " " + "years old");
 console.log("Is Eligible to Vote : " + isEligibleToVote);
 
 console.log("family Members ");
 
 //Displaying the family member with foreach
-familyMember.forEach(function(member) {
-    console.log("Family Member : " + member);
+familyMember.forEach(function(member, index) {
+    console.log("Family Member  " + (index + 1) + " : " + member);
 });
+
+
+//age calculator 
+function ageCalc(birthYear) {
+    return new Date().getFullYear() - birthYear;
+
+}
