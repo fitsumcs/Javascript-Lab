@@ -29,8 +29,12 @@ function addNewTask(e) {
         return;
     }
 
-    e.preventDefault();
+    e.preventDefault(); //disable form submission
 }
+
+
+
+
 
 // Clear Task Function definition 
 function clearAllTasks() {
@@ -38,6 +42,8 @@ function clearAllTasks() {
     alert("Hello this is Clear tasks ....");
 
 }
+
+
 
 // Filter tasks function definition 
 function filterTasks(e) {
