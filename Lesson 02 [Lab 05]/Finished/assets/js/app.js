@@ -14,3 +14,30 @@ form.addEventListener('submit', addNewTask);
 clearBtn.addEventListener('click', clearAllTasks);
 //   Filter Task 
 filter.addEventListener('keyup', filterTasks);
+
+
+
+
+
+
+// Add New  Task Function definition 
+function addNewTask(e) {
+
+    alert("Hello this is Add New Task ....");
+
+    //e.preventDefault();
+}
+
+// Clear Task Function definition 
+function clearAllTasks() {
+
+    alert("Hello this is Clear tasks ....");
+
+}
+
+// Filter tasks function definition 
+function filterTasks(e) {
+
+    console.log("Task Filter ...");
+
+}
