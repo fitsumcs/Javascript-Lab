@@ -23,9 +23,13 @@ filter.addEventListener('keyup', filterTasks);
 // Add New  Task Function definition 
 function addNewTask(e) {
 
-    alert("Hello this is Add New Task ....");
+    // Check empty entry
+    if (taskInput.value === '') {
+        alert('Enter New Task');
+        return;
+    }
 
-    //e.preventDefault();
+    e.preventDefault();
 }
 
 // Clear Task Function definition 
