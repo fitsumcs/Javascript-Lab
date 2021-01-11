@@ -23,9 +23,13 @@ filter.addEventListener('keyup', filterTasks);
 // Add New  Task Function definition 
 function addNewTask(e) {
 
+    e.preventDefault(); //disable form submission
+
+
     // Check empty entry
     if (taskInput.value === '') {
-        alert('Enter New Task');
+        taskInput.style.borderColor = "red";
+
         return;
     }
 
@@ -45,7 +49,9 @@ function addNewTask(e) {
     // Append to UL 
     taskList.appendChild(li);
 
-    e.preventDefault(); //disable form submission
+
+
+
 }
 
 
