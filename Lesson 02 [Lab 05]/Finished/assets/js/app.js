@@ -61,7 +61,13 @@ function addNewTask(e) {
 // Clear Task Function definition 
 function clearAllTasks() {
 
-    alert("Hello this is Clear tasks ....");
+    //This is the first way 
+    // taskList.innerHTML = '';
+
+    //  Second Wy 
+    while (taskList.firstChild) {
+        taskList.removeChild(taskList.firstChild);
+    }
 
 }
 
