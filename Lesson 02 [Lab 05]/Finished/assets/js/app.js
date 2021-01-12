@@ -14,6 +14,8 @@ form.addEventListener('submit', addNewTask);
 clearBtn.addEventListener('click', clearAllTasks);
 //   Filter Task 
 filter.addEventListener('keyup', filterTasks);
+// Remove task event [event delegation]
+taskList.addEventListener('click', removeTask);
 
 
 
