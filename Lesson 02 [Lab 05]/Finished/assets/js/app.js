@@ -81,3 +81,14 @@ function filterTasks(e) {
     console.log("Task Filter ...");
 
 }
+
+// Remove Task function definition 
+function removeTask(e) {
+    if (e.target.parentElement.classList.contains('delete-item')) {
+        if (confirm('Are You Sure about that ?')) {
+            e.target.parentElement.parentElement.remove();
+
+        }
+
+    }
+}
