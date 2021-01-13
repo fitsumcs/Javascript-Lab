@@ -5,6 +5,7 @@ const filter = document.querySelector('#filter'); //the task filter text field
 const taskList = document.querySelector('.collection'); //The UL
 const clearBtn = document.querySelector('.clear-tasks'); //the all task clear button
 
+const reloadIcon = document.querySelector('.fa'); //the reload button at the top navigation 
 
 // Add Event Listener  [Form , clearBtn and filter search input ]
 
@@ -16,7 +17,8 @@ clearBtn.addEventListener('click', clearAllTasks);
 filter.addEventListener('keyup', filterTasks);
 // Remove task event [event delegation]
 taskList.addEventListener('click', removeTask);
-
+// Event Listener for reload 
+reloadIcon.addEventListener('click', reloadPage);
 
 
 
@@ -91,4 +93,11 @@ function removeTask(e) {
         }
 
     }
+}
+
+
+// Reload Page Function 
+function reloadPage() {
+    //using the reload fun on location object 
+    location.reload();
 }
