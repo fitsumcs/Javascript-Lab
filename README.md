@@ -16,3 +16,12 @@
 ---
 
 # Lab 02 [DOM and BOM]
+
+## After completing this lab : 
+* You will be able to understand how the DOM Works 
+* Learn how to manipulate the DOM 
+* Learn how to use the BOM Methods 
+* Work on a sample Task Manager App 
+## We will go through learning DOM and BOM by  working on a Task Manager app 
+
+### Source Code for the Materail is Located on  : Lesson 01 [Lab 05]
