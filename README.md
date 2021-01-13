@@ -11,7 +11,8 @@
 * Work on a sample personal database and do some staff 
 ## We will go through learning basic javascript working on a sample project on the console 
 
-### Materail Located on  : Lesson 01 [Lab 04]
+### Source Code for the Materail is Located on  : Lesson 01 [Lab 04]
 
+---
 
 # Lab 02 [DOM and BOM]
