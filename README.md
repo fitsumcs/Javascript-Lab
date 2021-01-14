@@ -24,4 +24,6 @@
 * Work on a sample Task Manager App 
 ## We will go through learning DOM and BOM by  working on a Task Manager app 
 
+#### Note : The UI is Built based on Material UI :  [Material UI](https://materializecss.com/)
+
 ### Source Code for the Materail is Located on  : Lesson 01 [Lab 05]
