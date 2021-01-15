@@ -9,7 +9,7 @@
 * Learn the major concepts with javascript 
 * Learn the major concepts with javascript 
 * Work on a sample personal database and do some staff 
-## We will go through learning basic javascript working on a sample project on the console 
+### We will go through learning basic javascript working on a sample project on the console 
 
 ### Source Code for the Material is Located on  : Lesson 01 [Lab 04]
 
@@ -40,7 +40,7 @@
 * Continue  on the Task Manager App 
 
 
-## We will go through learning  by  working on a Task Manager app we have started on the previous lab  to support persistent data storage 
+### We will go through learning  by  working on a Task Manager app we have started on the previous lab  to support persistent data storage 
 
 
 ### Source Code for the Material is Located on  : Lesson 03 [Lab 06]
