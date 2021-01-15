@@ -11,3 +11,14 @@ function addToDatabase(newTask) {
 
 
 }
+
+// Load task from local storage function declaration 
+function loadfromDB() {
+    let listofTasks;
+    if (localStorage.getItem('tasks') == null) {
+        listofTasks = [];
+    } else {
+        listofTasks = JSON.parse(localStorage.getItem('tasks'));
+    }
+    return listofTasks;
+}
