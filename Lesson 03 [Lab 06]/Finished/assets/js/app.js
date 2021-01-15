@@ -103,6 +103,9 @@ function removeTask(e) {
         if (confirm('Are You Sure about that ?')) {
             e.target.parentElement.parentElement.remove();
 
+            // Remove from DB [Local Storage ...]
+            removefromDB(e.target.parentElement.parentElement);
+
         }
 
     }
