@@ -22,3 +22,8 @@ function loadfromDB() {
     }
     return listofTasks;
 }
+
+// Clear from Local Storage 
+function clearAllTasksfromDB() {
+    localStorage.clear();
+}
