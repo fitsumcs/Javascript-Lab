@@ -19,7 +19,8 @@ filter.addEventListener('keyup', filterTasks);
 taskList.addEventListener('click', removeTask);
 // Event Listener for reload 
 reloadIcon.addEventListener('click', reloadPage);
-
+// DOM load event 
+document.addEventListener('DOMContentLoaded', loadTasksfromDB);
 
 
 
