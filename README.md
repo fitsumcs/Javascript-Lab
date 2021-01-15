@@ -27,3 +27,20 @@
 #### Note : The UI is Built based on Material UI :  [Material UI](https://materializecss.com/)
 
 ### Source Code for the Material is Located on  : Lesson 01 [Lab 05]
+
+
+---
+
+# Lab 03 [Storage API's]
+
+## After completing this lab : 
+* You will be able to overview Storage API’s in the Browser 
+* Learn how to manipulate Local/Session Storage 
+* Learn how to use the Web SQL 
+* Continue  on the Task Manager App 
+
+
+## We will go through learning  by  working on a Task Manager app we have started on the previous lab  to support persistent data storage 
+
+
+### Source Code for the Material is Located on  : Lesson 03 [Lab 06]
