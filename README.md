@@ -36,7 +36,7 @@
 ## After completing this lab : 
 * You will be able to overview Storage API’s in the Browser 
 * Learn how to manipulate Local/Session Storage 
-* Learn how to use the Web SQL 
+* Learn how to use the Index DB 
 * Continue  on the Task Manager App 
 
 
