@@ -53,7 +53,7 @@ function addNewTask(e) {
     // Append to UL 
     taskList.appendChild(li);
 
-
+    addToDatabase(taskInput.value);
 
 
 }
