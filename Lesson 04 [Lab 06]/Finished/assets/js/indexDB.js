@@ -10,6 +10,7 @@ function onLoad() {
     //on Database successfully created
     openRequest.onsuccess = function(event) {
         db = openRequest.result;
+        displayData(db);
         console.log('The database is opened successfully');
 
     };
@@ -28,12 +29,14 @@ function onLoad() {
         objectStore.createIndex('taskName', 'taskName', { unique: false });
 
     }
+
+
 }
 
 
 
 
-
+//add task to database 
 function addToDB(taskName) {
 
     let task = {
@@ -54,4 +57,31 @@ function addToDB(taskName) {
     request.onerror = function() {
         console.log("Error", request.error);
     };
+}
+
+//clear tasks 
+function clearTasks() {
+    let transaction = db.transaction("tasks", "readwrite"); // (1)
+    let tasks = transaction.objectStore("tasks");
+    tasks.clear(); // clear the storage.
+    console.log("Tasks Cleared !!!");
+}
+
+function displayData(db) {
+
+    let transaction = db.transaction("tasks");
+    let tasks = transaction.objectStore("tasks");
+
+    let request = tasks.openCursor();
+
+
+    request.onsuccess = function() {
+        cursor = request.result;
+
+        return cursor;
+
+
+    }
+
+
 }
