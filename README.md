@@ -43,4 +43,4 @@
 ###### We will go through learning  by  working on a Task Manager app we have started on the previous lab  to support persistent data storage 
 
 
-### Source Code for the Material is Located on  : Lesson 03 [Lab 06]
+### Source Code for the Material is Located on  : Lesson 03 [Lab 06] (Web Storage API ) , Lesson 4 [Lab 06] (Indexed DB )
