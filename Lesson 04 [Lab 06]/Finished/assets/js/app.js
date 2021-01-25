@@ -19,6 +19,10 @@ filter.addEventListener('keyup', filterTasks);
 taskList.addEventListener('click', removeTask);
 // Event Listener for reload 
 reloadIcon.addEventListener('click', reloadPage);
+// on Load 
+document.addEventListener("DOMContentLoaded", () => {
+    onLoad();
+});
 
 
 
@@ -52,6 +56,8 @@ function addNewTask(e) {
     li.appendChild(link);
     // Append to UL 
     taskList.appendChild(li);
+
+    addToDB(taskInput.value);
 
 
 
