@@ -22,4 +22,6 @@ openRequest.onupgradeneeded = function(event) {
         objectStore = db.createObjectStore('tasks', { keyPath: 'id', autoIncrement: true });
     }
 
+    objectStore.createIndex('taskName', 'taskName', { unique: false });
+
 }
