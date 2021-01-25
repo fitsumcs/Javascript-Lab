@@ -9,7 +9,7 @@
 * Learn the major concepts with javascript 
 * Learn the major concepts with javascript 
 * Work on a sample personal database and do some staff 
-## We will go through learning basic javascript working on a sample project on the console 
+###### We will go through learning basic javascript working on a sample project on the console 
 
 ### Source Code for the Material is Located on  : Lesson 01 [Lab 04]
 
@@ -22,11 +22,11 @@
 * Learn how to manipulate the DOM 
 * Learn how to use the BOM Methods 
 * Work on a sample Task Manager App 
-## We will go through learning DOM and BOM by  working on a Task Manager app 
+###### We will go through learning DOM and BOM by  working on a Task Manager app 
 
 #### Note : The UI is Built based on Material UI :  [Material UI](https://materializecss.com/)
 
-### Source Code for the Material is Located on  : Lesson 01 [Lab 05]
+### Source Code for the Material is Located on  : Lesson 02 [Lab 05]
 
 
 ---
@@ -36,11 +36,11 @@
 ## After completing this lab : 
 * You will be able to overview Storage API’s in the Browser 
 * Learn how to manipulate Local/Session Storage 
-* Learn how to use the Web SQL 
+* Learn how to use the Index DB 
 * Continue  on the Task Manager App 
 
 
-## We will go through learning  by  working on a Task Manager app we have started on the previous lab  to support persistent data storage 
+###### We will go through learning  by  working on a Task Manager app we have started on the previous lab  to support persistent data storage 
 
 
 ### Source Code for the Material is Located on  : Lesson 03 [Lab 06]

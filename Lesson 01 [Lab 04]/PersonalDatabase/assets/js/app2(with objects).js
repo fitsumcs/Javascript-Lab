@@ -12,7 +12,7 @@ let personProfile = {
     height: "",
     ageCalc: function() { return this.age = new Date().getFullYear() - this.birthYear; },
     checkVote: function() {
-        let tempAge = this.ageCalc(Number(this.birthYear));
+        let tempAge = this.ageCalc();
         if (tempAge >= 18) { this.isEligibleToVote = true; } else { this.isEligibleToVote = false; }
     },
     calcBmi: function() {
