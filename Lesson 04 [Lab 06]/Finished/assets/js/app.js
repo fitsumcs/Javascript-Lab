@@ -62,9 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // create a new object with the form info
         let newTask = {
-                taskname: taskInput.value,
-            }
-            // console.log(newAppointment);
+            taskname: taskInput.value,
+        }
 
         // Insert the object into the database 
         let transaction = DB.transaction(['tasks'], 'readwrite');
