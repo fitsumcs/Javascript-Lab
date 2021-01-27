@@ -1,7 +1,3 @@
-//DB variable 
-
-let DB;
-
 // Define UI Variables 
 const taskInput = document.querySelector('#task'); //the task input text field
 const form = document.querySelector('#task-form'); //The form at the top
@@ -11,7 +7,9 @@ const clearBtn = document.querySelector('.clear-tasks'); //the all task clear bu
 
 const reloadIcon = document.querySelector('.fa'); //the reload button at the top navigation 
 
+//DB variable 
 
+let DB;
 
 
 
@@ -50,10 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Database ready and fields created!');
     }
 
-    form.addEventListener('submit', addAppointment);
-    form.addEventListener('submit', addAppointment);
+    form.addEventListener('submit', addNewTask);
 
-    function addAppointment(e) {
+    function addNewTask(e) {
         e.preventDefault();
 
         // Check empty entry
