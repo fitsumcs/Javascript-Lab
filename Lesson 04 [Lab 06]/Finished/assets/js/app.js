@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let transaction = DB.transaction(['tasks'], 'readwrite');
         let objectStore = transaction.objectStore('tasks');
 
-        // console.log(objectStore);
         let request = objectStore.add(newTask);
 
         // on success
