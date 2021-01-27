@@ -147,12 +147,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+    //clear button event listener   
     clearBtn.addEventListener('click', clearAllTasks);
+
     //clear tasks 
     function clearAllTasks() {
-        let transaction = DB.transaction("tasks", "readwrite"); // (1)
+        let transaction = DB.transaction("tasks", "readwrite");
         let tasks = transaction.objectStore("tasks");
-        tasks.clear(); // clear the storage.
+        // clear the table.
+        tasks.clear();
         displayTaskList();
         console.log("Tasks Cleared !!!");
     }
