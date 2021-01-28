@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Font Owesome Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="shortcut icon" type="image/svg" href="assets/img/tasks-solid.svg" />
+    <title>Task List App</title>
+</head>
+
+<body>
+
+
+
+    <!-- Navigation  -->
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper ">
+                <a href="#" class="brand-logo right"><i class="fa fa-retweet"></i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About </a></li>
+                    <li><a href="bom.html">BOM</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- End of Navigation  -->
+
+
+    <!-- card start  -->
+
+    <div class="row">
+        <div class="col s12">
+            <div id="main" class="card">
+                <div class="card-content">
+                    <span class="card-title">Daily Task Manager</span>
+                    <div class="row">
+                        <form id="task-form">
+                            <div class="input-field col s12">
+                                <input type="text" name="task" id="task">
+                                <label for="task">Add New Task</label>
+                            </div>
+                            <input type="submit" value="Add New Task" class="btn blue">
+                        </form>
+
+                    </div>
+                </div>
+                <div class="card-action">
+                    <h5 id="task-title">List of Tasks</h5>
+                    <div class="input-field col s12">
+                        <input type="search" name="filter" id="filter">
+                        <label for="filter">Search</label>
+                    </div>
+                    <ul class="collection">
+                        <!-- Here is the task list goes  -->
+                    </ul>
+                    <a href="#" class="clear-tasks btn red">Clear All Task</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Card End  -->
+
+
+
+
+
+    <!-- Jquery Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Materialize Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Our Own Js  -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
