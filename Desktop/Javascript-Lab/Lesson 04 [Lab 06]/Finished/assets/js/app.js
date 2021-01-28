@@ -113,7 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const link = document.createElement('a');
                 // Add class and the x marker for a 
                 link.className = 'delete-item secondary-content';
-                link.innerHTML = '<i class="fa fa-remove"></i>';
+                link.innerHTML = `
+                <i class="fa fa-remove"></i>
+                &nbsp;
+                <a href="/Lesson 04 [Lab 06]/Finished/edit.html?id=${cursor.value.id}"><i class="fa fa-edit"></i> </a>
+                `;
                 // Append link to li
                 li.appendChild(link);
                 // Append to UL 
