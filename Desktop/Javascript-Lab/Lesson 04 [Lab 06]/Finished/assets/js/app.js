@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Add class and the x marker for a 
                 link.className = 'delete-item secondary-content';
                 link.innerHTML = `
-                <i class="fa fa-remove"></i>
+                 <i class="fa fa-remove"></i>
                 &nbsp;
                 <a href="/Lesson 04 [Lab 06]/Finished/edit.html?id=${cursor.value.id}"><i class="fa fa-edit"></i> </a>
                 `;

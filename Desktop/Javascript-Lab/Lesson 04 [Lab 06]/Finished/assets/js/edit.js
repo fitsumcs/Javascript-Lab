@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateTask(e) {
         e.preventDefault();
-
         // Check empty entry
         if (taskInput.value === '') {
             taskInput.style.borderColor = "red";
