@@ -18,25 +18,25 @@ function loadPost() {
         if (this.status === 200) {
 
             //the data will be parsed as an object from the responseText object 
-            const customer = JSON.parse(this.responseText);
+            const post = JSON.parse(this.responseText);
 
             // Creating the UI 
             let output = `
             <div class="item">
             <div class="image">
-                <img src="${customer.image}">
+                <img src="${post.image}">
             </div>
             <div class="content">
                 <a class="header" href="#" id="bTitle">
-                ${customer.postTitle}
+                ${post.postTitle}
                 </a>
                 <div class="meta">
-                    <span id="bDate">${customer.date} </span>
-                    <span>By: <a href="#" id="bAuthor"> ${customer.name}</a></span>
+                    <span id="bDate">${post.date} </span>
+                    <span>By: <a href="#" id="bAuthor"> ${post.name}</a></span>
                 </div>
                 <div class="description">
                     <p id="bDesc">
-                    ${customer.postText}
+                    ${post.postText}
                     </p>
                 </div>
                 <div class="extra">

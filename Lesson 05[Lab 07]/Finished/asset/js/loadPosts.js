@@ -18,29 +18,29 @@ function loadPosts() {
         if (this.status === 200) {
 
             //the data will be parsed as an array object from the responseText object 
-            const customers = JSON.parse(this.responseText);
+            const posts = JSON.parse(this.responseText);
 
             let output = '';
 
-            customers.forEach(customer => {
+            posts.forEach(post => {
 
                 // Creating the UI by concatenation
                 output += `
               <div class="item">
               <div class="image">
-                  <img src="${customer.image}">
+                  <img src="${posts.image}">
               </div>
               <div class="content">
                   <a class="header" href="#" id="bTitle">
-                  ${customer.postTitle}
+                  ${posts.postTitle}
                   </a>
                   <div class="meta">
-                      <span id="bDate">${customer.date} </span>
-                      <span>By: <a href="#" id="bAuthor"> ${customer.name}</a></span>
+                      <span id="bDate">${posts.date} </span>
+                      <span>By: <a href="#" id="bAuthor"> ${posts.name}</a></span>
                   </div>
                   <div class="description">
                       <p id="bDesc">
-                      ${customer.postText}
+                      ${posts.postText}
                       </p>
                   </div>
                   <div class="extra">
