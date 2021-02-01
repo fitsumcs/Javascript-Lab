@@ -39,7 +39,7 @@ function removefromDB(taskItem) {
         listofTasks = JSON.parse(localStorage.getItem('tasks'));
     }
     listofTasks.forEach(function(task, index) {
-        if (taskItem.textContent === task)
+        if (taskItem.textContent.trim() === task.trim())
             listofTasks.splice(index, 1);
     });
     localStorage.setItem('tasks', JSON.stringify(listofTasks));
