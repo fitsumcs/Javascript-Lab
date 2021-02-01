@@ -10,12 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
 //load a single customer function 
 function load_fromPlaceHolder() {
 
+    //open the request 
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then(function(res) {
-            return res.json();
+            return res.json(); //return the JSON Promise
         })
         .then(function(posts) {
-
+            //iterate over each post [100 posts]
             let output = '';
             posts.forEach(function(post) {
                 output += `
