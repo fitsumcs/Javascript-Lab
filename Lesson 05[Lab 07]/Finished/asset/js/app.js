@@ -1,5 +1,6 @@
+//Load Every thing ....
 document.addEventListener("DOMContentLoaded", () => {
-    startTime(timerDemo);
+    startTime();
     loadCustomer();
     loadCustomers();
 });
