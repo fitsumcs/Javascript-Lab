@@ -28,19 +28,19 @@ function loadPosts() {
                 output += `
               <div class="item">
               <div class="image">
-                  <img src="${posts.image}">
+                  <img src="${post.image}">
               </div>
               <div class="content">
                   <a class="header" href="#" id="bTitle">
-                  ${posts.postTitle}
+                  ${post.postTitle}
                   </a>
                   <div class="meta">
-                      <span id="bDate">${posts.date} </span>
-                      <span>By: <a href="#" id="bAuthor"> ${posts.name}</a></span>
+                      <span id="bDate">${post.date} </span>
+                      <span>By: <a href="#" id="bAuthor"> ${post.name}</a></span>
                   </div>
                   <div class="description">
                       <p id="bDesc">
-                      ${posts.postText}
+                      ${post.postText}
                       </p>
                   </div>
                   <div class="extra">
