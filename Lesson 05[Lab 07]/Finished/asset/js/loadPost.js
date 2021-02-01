@@ -4,7 +4,7 @@ const postDiv = document.getElementById('myPost');
 
 
 //load a single customer function 
-function loadCustomer() {
+function loadPost() {
 
     // Create the xhr object 
     const xhr = new XMLHttpRequest();
