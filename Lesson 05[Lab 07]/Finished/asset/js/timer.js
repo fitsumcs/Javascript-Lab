@@ -1,5 +1,7 @@
+// UI Variables 
+const timerDemo = document.getElementById("timerDemo");
 //timer 
-function startTime(pElement) {
+function startTime() {
     //retrieve date 
     var today = new Date();
     var h = today.getHours();

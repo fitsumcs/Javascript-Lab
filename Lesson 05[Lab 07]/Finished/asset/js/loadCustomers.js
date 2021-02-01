@@ -17,14 +17,14 @@ function loadCustomers() {
         // Check status is OK 
         if (this.status === 200) {
 
-            //the data will be parsed as an object from the responseText object 
+            //the data will be parsed as an array object from the responseText object 
             const customers = JSON.parse(this.responseText);
 
             let output = '';
 
             customers.forEach(customer => {
 
-                // Creating the UI 
+                // Creating the UI by concatenation
                 output += `
               <div class="item">
               <div class="image">
