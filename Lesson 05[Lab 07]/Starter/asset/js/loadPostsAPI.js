@@ -13,8 +13,8 @@ function load_fromPlaceHolder() {
 
 
 }
-
-async function load_fromPlaceHolder_new() {
+//async await
+function load_fromPlaceHolder_new() {
 
 
 
