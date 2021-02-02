@@ -56,7 +56,7 @@
 * Learn how to manipulate Third Party API  
 
 
-###### We will go through learning  by  working on a  Simple Blog Application that we read from JSON and Fake JSON API   
+###### We will go through learning  by  working on a  Simple Blog Application that we read from JSON and Third Party API (JSONPlaceholder)  
 
 #### Note : The UI is Built based on Semantic UI :  [Semantic  UI ](https://semantic-ui.com/)
 
