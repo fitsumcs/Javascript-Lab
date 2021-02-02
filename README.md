@@ -58,6 +58,6 @@
 
 ###### We will go through learning  by  working on a  Simple Blog Application that we read from JSON and Fake JSON API   
 
-#### Note : The UI is Built based on Material UI :  [Semantic  UI ](https://semantic-ui.com/)
+#### Note : The UI is Built based on Semantic UI :  [Semantic  UI ](https://semantic-ui.com/)
 
 ### Source Code for the Material is Located on  : (Lesson 05 [Lab 07])
