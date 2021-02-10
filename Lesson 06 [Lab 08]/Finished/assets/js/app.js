@@ -2,6 +2,9 @@
 import { UI } from "./UI.js";
 import { DB } from "./DB.js";
 
+
+
+
 // Define UI Variables 
 
 //the task input text field
@@ -17,8 +20,20 @@ const clearBtn = document.querySelector('.clear-tasks');
 //the reload button at the top navigation 
 const reloadIcon = document.querySelector('.fa');
 
+
+// Create Objects 
 const My_UI = new UI(taskList);
 const My_DB = new DB();
+
+
+// DOM Load
+document.addEventListener('DOMContentLoaded', () => {
+
+    My_DB.displayTasks();
+
+});
+
+
 
 
 form.addEventListener("submit", (e) => {

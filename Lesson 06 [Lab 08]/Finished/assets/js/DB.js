@@ -32,6 +32,14 @@ class DB {
 
     }
 
+
+    async displayTasks() {
+        const DB = await openDB('tasks', 1);
+        const taskList = await DB.getAllFromIndex('tasks', 'date')
+
+        console.log(taskList);
+    }
+
 }
 
 export { DB };
