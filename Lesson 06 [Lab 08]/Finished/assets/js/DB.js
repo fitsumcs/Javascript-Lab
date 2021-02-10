@@ -24,6 +24,7 @@ class DB {
 
 
 
+    //Add New Task to Database 
     async addTask(taskname) {
 
         const DB = await openDB('tasks', 1);
@@ -44,20 +45,35 @@ class DB {
     }
 
 
+    //Display All Tasks 
     async displayTasks() {
 
 
         const DB = await openDB('tasks', 1);
 
         if (DB) {
-            const alltaskList = await DB.getAllFromIndex('tasks', 'date')
+            const all_tasks = await DB.getAllFromIndex('tasks', 'date')
 
-            My_UI.addTaskListToUI(alltaskList);
+            //Paint the UI 
+            My_UI.addTaskListToUI(all_tasks);
         }
 
         DB.close();
 
     }
+
+
+    //Clear All Tasks 
+    async clearAllTasks() {
+        const DB = await openDB('tasks', 1);
+
+        DB.clear('tasks').then(() => {
+            this.displayTasks()
+        })
+    }
+
+
+
 
 }
 

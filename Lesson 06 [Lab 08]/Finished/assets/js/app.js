@@ -15,7 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+//clear button event listener   
+clearBtn.addEventListener('click', () => {
+    My_DB.clearAllTasks();
 
+});
 
 
 form.addEventListener("submit", (e) => {
