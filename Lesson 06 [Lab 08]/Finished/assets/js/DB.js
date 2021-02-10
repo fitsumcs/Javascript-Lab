@@ -1,6 +1,6 @@
-import { openDB, deleteDB, wrap, unwrap } from 'https://unpkg.com/idb?module';
+import { openDB } from 'https://unpkg.com/idb?module';
 
-import { createDB } from "./DBConfig.js"
+import { DBConfig } from "./DBConfig.js"
 
 
 
@@ -11,7 +11,8 @@ class DB {
 
     constructor() {
 
-        createDB(openDB);
+        const DBConfigV = new DBConfig();
+        DBConfigV.createDB(openDB);
     }
 
 
@@ -19,8 +20,7 @@ class DB {
     async addTask(taskname) {
 
         const DB = await openDB('tasks', 1);
-        DB
-            .add('tasks', { taskname })
+        DB.add('tasks', { taskname, date: new Date() })
             .then(result => {
                 console.log('success!', result);
             })
