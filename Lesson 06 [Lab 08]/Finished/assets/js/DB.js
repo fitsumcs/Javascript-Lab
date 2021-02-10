@@ -1,7 +1,12 @@
+// import required class's
 import { openDB } from 'https://unpkg.com/idb?module';
 
 import { DBConfig } from "./DBConfig.js"
+import { UI } from "./UI.js";
 
+
+//The UI Object 
+const My_UI = new UI(taskList);
 
 
 
@@ -13,6 +18,8 @@ class DB {
 
         const DBConfigV = new DBConfig();
         DBConfigV.createDB(openDB);
+
+
     }
 
 
@@ -22,7 +29,11 @@ class DB {
         const DB = await openDB('tasks', 1);
         DB.add('tasks', { taskname, date: new Date() })
             .then(result => {
-                console.log('success!', result);
+                console.log('Successfully Added to Database!');
+                //display data 
+                this.displayTasks().then(() => {
+                    console.log("Display All !!");
+                })
             })
             .catch(err => {
                 console.error('error: ', err);
@@ -34,10 +45,18 @@ class DB {
 
 
     async displayTasks() {
-        const DB = await openDB('tasks', 1);
-        const taskList = await DB.getAllFromIndex('tasks', 'date')
 
-        console.log(taskList);
+
+        const DB = await openDB('tasks', 1);
+
+        if (DB) {
+            const alltaskList = await DB.getAllFromIndex('tasks', 'date')
+
+            My_UI.addTaskListToUI(alltaskList);
+        }
+
+        DB.close();
+
     }
 
 }
