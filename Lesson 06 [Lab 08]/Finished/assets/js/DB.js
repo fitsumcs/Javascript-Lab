@@ -32,9 +32,7 @@ class DB {
             .then(result => {
                 console.log('Successfully Added to Database!');
                 //display data 
-                this.displayTasks().then(() => {
-                    console.log("Display All !!");
-                })
+                this.displayTasks();
             })
             .catch(err => {
                 console.error('error: ', err);
@@ -70,6 +68,15 @@ class DB {
         DB.clear('tasks').then(() => {
             this.displayTasks()
         })
+    }
+
+    //Delete Task 
+    async deleteTask(id) {
+
+        const DB = await openDB('tasks', 1);
+
+        DB.delete('tasks', id);
+
     }
 
 
