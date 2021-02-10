@@ -40,11 +40,13 @@
              link.className = 'delete-item secondary-content';
 
              //Make sure you change the URL of edit.html so that it works correctly 
-             link.innerHTML = `
-        <i class="fa fa-remove"></i>
-       &nbsp;
-       <a href="/Lesson 04 [Lab 06]/Finished/edit.html?id=${task.id}"><i class="fa fa-edit"></i> </a>
-       `;
+             link.innerHTML = ` 
+                         
+                        <i class="fa fa-remove"></i>
+                           &nbsp;
+                         <a href="/Lesson 04 [Lab 06]/Finished/edit.html?id=${task.id}"><i class="fa fa-edit"></i> </a>
+                           
+                            `;
 
              // Append link to li
              li.appendChild(link);
