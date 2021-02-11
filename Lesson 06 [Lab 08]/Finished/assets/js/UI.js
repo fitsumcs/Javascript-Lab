@@ -19,19 +19,20 @@
          }
 
 
-         tasks.forEach(task => {
+         tasks.forEach(({ id, taskname }) => {
+
 
              // Create an li element when the user adds a task 
              const li = document.createElement('li');
 
              //add Attribute for delete 
-             li.setAttribute('data-task-id', task.id);
+             li.setAttribute('data-task-id', id);
 
              // Adding a class
              li.className = 'collection-item';
 
              // Create text node and append it 
-             li.appendChild(document.createTextNode(task.taskname));
+             li.appendChild(document.createTextNode(taskname));
 
              // Create new element for the link 
              const link = document.createElement('a');
@@ -44,7 +45,7 @@
                          
                         <i class="fa fa-remove"></i>
                            &nbsp;
-                         <a href="/Lesson 06 [Lab 08]/Finished/edit.html?id=${task.id}"><i class="fa fa-edit"></i> </a>
+                         <a href="/Lesson 06 [Lab 08]/Finished/edit.html?id=${id}"><i class="fa fa-edit"></i> </a>
                            
                             `;
 
