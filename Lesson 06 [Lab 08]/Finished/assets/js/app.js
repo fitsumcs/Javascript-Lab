@@ -11,7 +11,7 @@ const My_DB = new DB();
 // DOM Load
 document.addEventListener('DOMContentLoaded', () => {
 
-    My_DB.displayTasks(taskList);
+    My_DB.displayTasks();
 
 });
 

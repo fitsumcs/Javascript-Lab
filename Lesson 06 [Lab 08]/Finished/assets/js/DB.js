@@ -6,7 +6,7 @@ import { UI } from "./UI.js";
 
 
 //The UI Object 
-const My_UI = new UI(taskList);
+const My_UI = new UI();
 
 
 
@@ -76,6 +76,19 @@ class DB {
         const DB = await openDB('tasks', 1);
 
         DB.delete('tasks', id);
+
+    }
+
+    //Update DB 
+    //Left For You to work on !!!
+
+    async getTask(id) {
+        const DB = await openDB('tasks', 1);
+        const task = DB.get('tasks', id)
+
+        // console.log(task);
+
+        return task;
 
     }
 

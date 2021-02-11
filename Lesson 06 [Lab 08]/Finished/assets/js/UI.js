@@ -2,9 +2,9 @@
 
 
 
-     constructor(taskList) {
+     constructor() {
 
-         this.taskList = taskList;
+
 
 
      }
@@ -44,7 +44,7 @@
                          
                         <i class="fa fa-remove"></i>
                            &nbsp;
-                         <a href="/Lesson 04 [Lab 06]/Finished/edit.html?id=${task.id}"><i class="fa fa-edit"></i> </a>
+                         <a href="/Lesson 06 [Lab 08]/Finished/edit.html?id=${task.id}"><i class="fa fa-edit"></i> </a>
                            
                             `;
 
@@ -52,17 +52,15 @@
              li.appendChild(link);
 
              // Append to UL 
-             this.taskList.appendChild(li);
+             taskList.appendChild(li);
 
          });
 
-
-
-
-
-
-
      }
+
+
+     //Delete a Task 
+
 
 
  }
