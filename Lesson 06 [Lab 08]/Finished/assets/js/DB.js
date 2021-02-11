@@ -80,7 +80,7 @@ class DB {
     }
 
     //Update DB 
-    //Left For You to work on !!!
+    //Left For You to work on
 
     async getTask(id) {
         const DB = await openDB('tasks', 1);
