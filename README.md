@@ -61,3 +61,21 @@
 #### Note : The UI is Built based on Semantic UI :  [Semantic  UI ](https://semantic-ui.com/)
 
 ### Source Code for the Material is Located on  : (Lesson 05 [Lab 07])
+
+---
+
+# Lab 05 [Advanced Javascript]
+
+## After completing this lab : 
+* You will be able to overview Advanced Concepts on Javascript
+ * Symbol , Template Literal , Destructuring , Array methods [for in / for of] , and Arrow  Function 
+ * Object Oriented Javascript[Mainly ES6 Class]
+ * Exception and ES6 Modules 
+
+#### Note : The UI is Built based on Bootstrap 5 UI :  [Bootstrap UI](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+
+###### This will be different setup from previous labs where students will practice the topics by following instructions on source code
+
+
+### Source Code for the Material is Located on  : Lesson 06 [Lab 08]
+
