@@ -74,7 +74,7 @@
 
 #### Note : The UI is Built based on Bootstrap 5 UI :  [Bootstrap UI](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
-###### This will be different setup from previous labs where students will practice the topics by following instructions 
+###### This will be different setup from previous labs where students will practice the topics by following instructions on source code
 
 
 ### Source Code for the Material is Located on  : Lesson 06 [Lab 08]
