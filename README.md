@@ -72,6 +72,7 @@
  * Object Oriented Javascript[Mainly ES6 Class]
  * Exception and ES6 Modules 
 
+#### Note : The UI is Built based on Bootstrap 5 UI :  [Bootstrap UI](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 ###### This will be different setup from previous labs where students will practice the topics by following instructions 
 
