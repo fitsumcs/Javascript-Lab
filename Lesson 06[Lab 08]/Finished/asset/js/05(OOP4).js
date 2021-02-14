@@ -5,7 +5,7 @@ function Person(firstName, lastName) {
 }
 
 // 1. Create a getFullName Method on prototype object 
-// 2. The Function will return firstNam lastName
+// 2. The Function will return firstName lastName
 
 
 //create a customer object

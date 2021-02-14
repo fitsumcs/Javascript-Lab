@@ -18,7 +18,7 @@ function arrayDestructuring() {
 
     //1. Destructor this array to firstName and lastName
 
-    //2. Display it 
+    //2. Display it  [Replace it with ${firstName} ${lastName} once you have the variables]
     des_arr.innerHTML = `Hello , I am firstName lastName `
 
 
@@ -27,7 +27,7 @@ function arrayDestructuring() {
 
     //1. Destructor this string array to firstName and lastName by using split() method of string object
 
-    //2. Display it 
+    //2. Display it [Replace it with ${firstName} ${lastName} once you have the variables]
     des_string.innerHTML = `Hello , I am firstName lastName `
 
 
@@ -43,13 +43,13 @@ function objectDestructuring() {
 
     //1. Destructor this object to firstName and lastName 
 
-    //2. Display it 
+    //2. Display it [Replace it with ${firstName} ${lastName} once you have the variables]
     des_obj1.innerHTML = `Hi , I am firstName lastName `
 
 
     //1. Destructor this object to fName and sName [different naming]
 
-    //2. Display it 
+    //2. Display it [Replace it with ${Name} ${lName} once you have the variables]
     des_obj2.innerHTML = `Hi , I am fName lName `
 
 
@@ -63,7 +63,7 @@ function spreadSyntax() {
     //1. Pass the array using spread syntax
     const result = sum1();
 
-    //2. Display it 
+    //Display it 
     spread_syntax.innerHTML = `The Sum is : ${result} `
 
 
@@ -103,7 +103,7 @@ function sum1(x1, x2, x3, x4) {
 //3. Make this function to support rest, and add 5 numbers
 function sum2(x1, x2) {
 
-    //Function that add 5 numbers 
+    //4. Function that add 5 numbers [Consider Adding the arr[0], arr[1], arr[2]]
 
     return x1 + x2;
 

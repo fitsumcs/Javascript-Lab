@@ -12,5 +12,5 @@
 
 
 
-//4. Display the greeting on Bran Object [remove the string when you have the object]
+//5. Display the greeting on Bran Object [remove the string when you have the object]
 Obj_C3.innerHTML = "Bran.greeting()";

@@ -32,7 +32,7 @@ function displaySymbolEquality() {
     // 3. Compare their equality (===) , store it on result variable
 
 
-    //2. Display the result variable
+    //2. Display the result variable [Remove the string once you have the variable]
     symbolEquality.innerHTML = "result";
 
 
