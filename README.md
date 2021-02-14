@@ -68,7 +68,7 @@
 
 ## After completing this lab : 
 * You will be able to overview Advanced Concepts on Javascript
- * Symbol , Template Literal , Destructuring , Array methods [for in / for of] , and Arrow  Function 
+ * Symbol , Template Literal , Destructuring , spread/rest syntax , New Loops [for in / for of] , function borrowing and Arrow  Function 
  * Object Oriented Javascript[Mainly ES6 Class]
  * Exception and ES6 Modules 
 
