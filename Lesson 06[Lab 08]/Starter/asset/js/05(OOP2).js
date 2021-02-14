@@ -6,10 +6,10 @@ const PersonObj = {
     }
 }
 
-//3. Create Theon Object using Person Template
+//2. Create Theon Object using Person Template
 
 
-//4. Add firstName[Theon] and lastName[Greyjoy] 
+//3. Add firstName[Theon] and lastName[Greyjoy] 
 
 
 //4. Display the greeting on Theon Object [remove the string when you have the object]
