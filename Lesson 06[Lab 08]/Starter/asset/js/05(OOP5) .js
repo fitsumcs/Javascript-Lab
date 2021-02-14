@@ -22,5 +22,5 @@ class Customer_ES6 {
 //3. Create Customer ["Jeor", "Mormont"]
 
 
-//4. Display the greeting on Bran Object [remove the string when you have the object]
+//4. Display the greeting on Jeor Customer Object [remove the string when you have the object]
 es6_proto.innerHTML = "cu.greeting()";
